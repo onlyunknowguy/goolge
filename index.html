@@ -1,0 +1,55 @@
+<!--SEED U SUCK | onlyunknowguyOnTop... balala español-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Fazer login nas Contas do Google</title>
+  <link rel="icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="step step-email active">
+    <div class="top-content">
+      <img src="https://i.postimg.cc/CL7CmGSx/google-logo-png-29530.png" alt="Google Logo">
+      <h2>Fazer login</h2>
+      <p class="heading">Use sua conta do Google</p>
+    </div>
+    <div class="inputs">
+      <input type="email" id="email" class="input" required>
+      <label for="email" class="input-label">E-mail ou telefone</label>
+    </div>
+    <a href="#" class="link-btn">Esqueceu o e-mail?</a>
+    <p class="color">Este não é seu computador? Use o modo visitante para fazer login de forma privada.</p>
+    <a href="#" class="link-btn">Saiba mais</a>
+    <div class="btn-group">
+      <button class="create-btn">Criar conta</button>
+      <button class="next-btn" id="nextToPassword">Próximo</button>
+    </div>
+  </div>
+  <div class="step step-password">
+    <div class="top-content">
+      <img src="https://i.postimg.cc/CL7CmGSx/google-logo-png-29530.png" alt="Google Logo">
+      <h2>Fazer login</h2>
+      <p class="heading">Bem-vindo, <span id="userEmail"></span></p>
+    </div>
+    <div class="inputs">
+      <input type="password" id="password" class="input" required>
+      <label for="password" class="input-label">Senha</label>
+    </div>
+    <div class="password-helper">
+      <div class="password-toggle">
+        <input type="checkbox" id="show-password">
+        <label for="show-password">Mostrar senha</label>
+      </div>
+    </div>
+    <a href="#" class="link-btn">Esqueceu a senha?</a>
+    <div class="btn-group">
+      <button class="back-btn" id="backToEmail">Voltar</button>
+      <button class="next-btn" onclick="handleNextClick()">Próximo</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
